@@ -1,0 +1,37 @@
+﻿<Page x:Class="AssetTracking.CreateTicket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AssetTracking"
+      mc:Ignorable="d"
+      Title="CreateTicket" Height="583.658" Width="1565.37">
+
+    <Grid Background="#FFC3C3C3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="483*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FFD9F9EF" HorizontalAlignment="Left" Height="581" Grid.RowSpan="2" Stroke="White" VerticalAlignment="Top" Width="726" Margin="4,3,0,0"/>
+        <Rectangle Fill="#FFAAB4B1" HorizontalAlignment="Left" Height="82" Stroke="White" VerticalAlignment="Top" Width="730"/>
+        <Rectangle Fill="#FFFBFAEA" HorizontalAlignment="Left" Height="75" Margin="730,0,0,0" Grid.Row="1" Stroke="White" VerticalAlignment="Top" Width="835"/>
+        <TextBox x:Name="txtReported" HorizontalAlignment="Left" Height="112" Margin="794,171,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="110" Margin="794,350,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="666"/>
+        <Label x:Name="lblProblem" Content="Report:" HorizontalAlignment="Left" Height="53" Margin="754,113,0,0" VerticalAlignment="Top" Width="398" FontSize="22"/>
+        <Label x:Name="lblResolution" Content="Resolution:" HorizontalAlignment="Left" Height="53" Margin="754,288,0,0" VerticalAlignment="Top" Width="398" FontSize="22"/>
+        <Button x:Name="btnEdit" Content="Edit Return" HorizontalAlignment="Left" Height="52" Margin="1290,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="136" FontSize="20"/>
+        <TextBox x:Name="txtTicketNo" HorizontalAlignment="Left" Height="36" Margin="526,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198" Background="#FFE6E6E6"/>
+        <Label x:Name="lblProblem_Copy5" Content="Ticket Number:" HorizontalAlignment="Left" Height="36" Margin="367,87,0,0" VerticalAlignment="Top" Width="154" FontSize="22"/>
+        <Label x:Name="lbl" Content="" HorizontalAlignment="Left" Height="72" Margin="34,10,0,0" VerticalAlignment="Top" Width="616" FontSize="36" Foreground="White"/>
+        <TextBox x:Name="txtTicketNo_Copy" HorizontalAlignment="Left" Height="36" Margin="1290,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198" Background="#FFE6E6E6"/>
+        <Label x:Name="lblReturnNo" Content="Return Number:" HorizontalAlignment="Left" Height="36" Margin="1122,10,0,0" VerticalAlignment="Top" Width="163" FontSize="22"/>
+        <DataGrid x:Name="ReturnDG" HorizontalAlignment="Left" Height="267" Margin="34,193,0,0" VerticalAlignment="Top" Width="671" SelectionChanged="ReturnDG_SelectionChanged"/>
+        <Button x:Name="btnAddReturn" Content="Add Return" HorizontalAlignment="Left" Height="52" Margin="569,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="136" FontSize="20" Click="btnAddReturn_Click"/>
+        <Label x:Name="lblReturnTable" Content="RETURN TABLE" HorizontalAlignment="Left" Height="36" Margin="291,152,0,0" VerticalAlignment="Top" Width="154" FontSize="22"/>
+        <ComboBox x:Name="cmbStatus" HorizontalAlignment="Left" Margin="82,89,0,0" VerticalAlignment="Top" Width="144" Height="36"/>
+        <Label x:Name="lblStatus" Content="Status:" HorizontalAlignment="Left" Height="36" Margin="10,89,0,0" VerticalAlignment="Top" Width="72" FontSize="20"/>
+        <ComboBox x:Name="cmbStatus_Copy" HorizontalAlignment="Left" Margin="826,12,0,0" VerticalAlignment="Top" Width="144" Height="36"/>
+        <Label x:Name="lblStatus_Copy" Content="Status:" HorizontalAlignment="Left" Height="36" Margin="754,12,0,0" VerticalAlignment="Top" Width="72" FontSize="20"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="89" Margin="730,0,0,0" VerticalAlignment="Top" Width="835"/>
+    </Grid>
+</Page>

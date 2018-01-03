@@ -1,0 +1,42 @@
+﻿<Window x:Class="AssetTracking.AddAsset"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AssetTracking"
+        mc:Ignorable="d"
+       WindowStartupLocation="CenterScreen" Title="AddAsset" Height="584.776" Width="1506.269"
+        Closing="CleanYourMess">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="451*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FFD9F9EF" HorizontalAlignment="Left" Height="554" Grid.RowSpan="2" Stroke="White" VerticalAlignment="Top" Width="726" Margin="4,3,0,-3"/>
+        <TextBox x:Name="txtSerial" HorizontalAlignment="Left" Height="31" Margin="230,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="386"/>
+        <TextBox x:Name="txtISSI" HorizontalAlignment="Left" Height="36" Margin="260,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="234" Grid.Row="1"/>
+        <TextBox x:Name="txtTEI" HorizontalAlignment="Left" Height="36" Margin="260,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="234" Grid.Row="1"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Height="36" Margin="260,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="234" Grid.Row="1"/>
+        <ComboBox x:Name="cmbModel" HorizontalAlignment="Left" Margin="260,280,0,0" VerticalAlignment="Top" Width="234" Height="38" Grid.Row="1"/>
+        <Rectangle Fill="#FFFBFAEA" HorizontalAlignment="Left" Height="89" Margin="0,394,0,-32" Grid.Row="1" Stroke="White" VerticalAlignment="Top" Width="1498"/>
+        <Label x:Name="lbl" Content="Ticket No: " HorizontalAlignment="Left" Height="44" Margin="844,10,0,0" VerticalAlignment="Top" Width="616" FontSize="28"/>
+        <TextBox x:Name="txtReported" HorizontalAlignment="Left" Height="112" Margin="794,76,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="666" Grid.Row="1"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="110" Margin="794,255,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="666" Grid.Row="1"/>
+        <Label x:Name="lblProblem" Content="Report:" HorizontalAlignment="Left" Height="53" Margin="754,18,0,0" VerticalAlignment="Top" Width="398" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblResolution" Content="Resolution:" HorizontalAlignment="Left" Height="53" Margin="754,193,0,0" VerticalAlignment="Top" Width="398" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblProblem_Copy" Content="ISSI:" HorizontalAlignment="Left" Height="36" Margin="70,62,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblProblem_Copy1" Content="TEI:" HorizontalAlignment="Left" Height="36" Margin="70,128,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblProblem_Copy2" Content="Date:" HorizontalAlignment="Left" Height="36" Margin="70,202,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblProblem_Copy3" Content="Model:" HorizontalAlignment="Left" Height="36" Margin="70,280,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
+        <Label x:Name="lblSearchSerial" Content="Search Serial:" HorizontalAlignment="Left" Height="36" Margin="72,54,0,0" VerticalAlignment="Top" Width="136" FontSize="22"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="43" Margin="1174,406,0,0" Grid.Row="1" VerticalAlignment="Top" Width="252" FontSize="20"/>
+        <TextBox x:Name="txtReturnNo" HorizontalAlignment="Left" Height="36" Margin="1262,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198" Background="#FFE6E6E6"/>
+        <Label x:Name="lblReturn" Content="Return Number:" HorizontalAlignment="Left" Height="36" Margin="1083,46,0,0" VerticalAlignment="Top" Width="174" FontSize="22"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="730">
+            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Height="26" Margin="614,58,0,0" VerticalAlignment="Top" Width="75"/>
+        </Border>
+        <ComboBox x:Name="cmbstatus" HorizontalAlignment="Left" Margin="260,353,0,0" VerticalAlignment="Top" Width="234" Height="38" Grid.Row="1"/>
+        <Label x:Name="lblStatus" Content="Status:" HorizontalAlignment="Left" Height="36" Margin="70,353,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
+        <Button x:Name="btnAddNewAsset" Content="Add New Asset" HorizontalAlignment="Left" Height="35" Margin="536,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="170" FontSize="20"/>
+    </Grid>
+</Window>
