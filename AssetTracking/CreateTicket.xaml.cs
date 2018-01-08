@@ -63,7 +63,7 @@ namespace AssetTracking
             i++;
             txtTicketNo.Text = i.ToString();
         }
-        //Form Load Event
+        //Fill Customer GRid
         private void FillGrid()
         {
             cmd = new SqlCommand("Select * from Return_Table", cs);

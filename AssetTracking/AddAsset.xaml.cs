@@ -23,7 +23,7 @@ namespace AssetTracking
 
         SqlCommand cmd;
         SqlConnection cs;
-        //SqlDataReader rdr;
+        SqlDataReader rdr;
         
         //Getters And Setters
         public string myString { get; set; }
@@ -45,6 +45,8 @@ namespace AssetTracking
             //Object is Ticket number - passed from Create Ticket Page
             myString = Cellvalue;
             lbl.Content = lbl.Content + myString;
+
+            //load customer name into thing with number preferable    ---< why again???
         }
         private void uniqueValue()
         {           
@@ -59,6 +61,14 @@ namespace AssetTracking
         private void CleanYourMess(object sender, System.ComponentModel.CancelEventArgs e)
         {
             cs.Close();
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            cmd = new SqlCommand("Select ISSI FROM Asset_Table where Serial_ID = '"+txtSerial.Text +"'", cs);
+            rdr=  cmd.ExecuteReader();
+           // String ding = rdr.GetString("ISSI").ToString();
+            txtISSI.Text = rdr.ToString();
         }
     }
 }

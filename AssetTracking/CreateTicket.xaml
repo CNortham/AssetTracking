@@ -33,5 +33,6 @@
         <ComboBox x:Name="cmbStatus_Copy" HorizontalAlignment="Left" Margin="826,12,0,0" VerticalAlignment="Top" Width="144" Height="36"/>
         <Label x:Name="lblStatus_Copy" Content="Status:" HorizontalAlignment="Left" Height="36" Margin="754,12,0,0" VerticalAlignment="Top" Width="72" FontSize="20"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="89" Margin="730,0,0,0" VerticalAlignment="Top" Width="835"/>
+        <Button x:Name="btnAddReturn_Copy" Content="Add Return" HorizontalAlignment="Left" Height="52" Margin="569,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="136" FontSize="20" Click="btnAddReturn_Click"/>
     </Grid>
 </Page>

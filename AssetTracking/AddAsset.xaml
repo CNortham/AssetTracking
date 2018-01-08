@@ -32,11 +32,12 @@
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="43" Margin="1174,406,0,0" Grid.Row="1" VerticalAlignment="Top" Width="252" FontSize="20"/>
         <TextBox x:Name="txtReturnNo" HorizontalAlignment="Left" Height="36" Margin="1262,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198" Background="#FFE6E6E6"/>
         <Label x:Name="lblReturn" Content="Return Number:" HorizontalAlignment="Left" Height="36" Margin="1083,46,0,0" VerticalAlignment="Top" Width="174" FontSize="22"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="730">
-            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Height="26" Margin="614,58,0,0" VerticalAlignment="Top" Width="75"/>
-        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="730"/>
         <ComboBox x:Name="cmbstatus" HorizontalAlignment="Left" Margin="260,353,0,0" VerticalAlignment="Top" Width="234" Height="38" Grid.Row="1"/>
         <Label x:Name="lblStatus" Content="Status:" HorizontalAlignment="Left" Height="36" Margin="70,353,0,0" VerticalAlignment="Top" Width="136" FontSize="22" Grid.Row="1"/>
         <Button x:Name="btnAddNewAsset" Content="Add New Asset" HorizontalAlignment="Left" Height="35" Margin="536,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="170" FontSize="20"/>
+        <Label x:Name="lblCustomerNo" Content="" HorizontalAlignment="Left" Height="24" Margin="97,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        <Label x:Name="lblCutsomterName" Content="" HorizontalAlignment="Left" Height="24" Margin="288,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        <Button x:Name="btnSearch" Content="Search" Margin="627,34,792,21" Click="btnSearch_Click"/>
     </Grid>
 </Window>
