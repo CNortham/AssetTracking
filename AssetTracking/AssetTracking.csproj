@@ -61,15 +61,23 @@
     <Compile Include="AddAsset.xaml.cs">
       <DependentUpon>AddAsset.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewTicket.xaml.cs">
+      <DependentUpon>ViewTicket.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateTicket.xaml.cs">
       <DependentUpon>CreateTicket.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="MainFrame.xaml.cs">
       <DependentUpon>MainFrame.xaml</DependentUpon>
     </Compile>
     <Page Include="AddAsset.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTicket.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="CreateTicket.xaml">
       <SubType>Designer</SubType>

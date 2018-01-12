@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AssetTracking"
         mc:Ignorable="d"
-        Title="Asset TRacking - 1st menu" Height="950" Width="1943" WindowState="Maximized">
+        Title="Asset TRacking - 1st menu" Height="950" Width="1943" WindowState="Maximized" Closing="OnClosingEvent">
     <Grid Background="#FFEEEEEE">
         <Button x:Name="btnViewDatabase" Content="View Customer Database" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="173" />
-        <Button x:Name="btnAddAsset" Content="Add Asset" HorizontalAlignment="Left" Margin="224,13,0,0" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="btnSearchAsset" Content="Search Serial Number" HorizontalAlignment="Left" Margin="462,13,0,0" VerticalAlignment="Top" Width="173" RenderTransformOrigin="-0.009,-2.653" />
         <Frame x:Name="frame1" Content="Frame" HorizontalAlignment="Left" Height="724" VerticalAlignment="Top" Width="1870" Margin="9,167,0,0"  Background="#FFFBFBFB" RenderTransformOrigin="0.5,0.5">
             <Frame.RenderTransform>

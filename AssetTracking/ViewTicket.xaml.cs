@@ -9,7 +9,7 @@ namespace AssetTracking
     /// <summary>
     /// Interaction logic for CreateTicket.xaml
     /// </summary>
-    public partial class CreateTicket : Page
+    public partial class ViewTicket : Page
     {
         DataTable dt;
 
@@ -23,7 +23,7 @@ namespace AssetTracking
         public string CustomerId { get; set; }
         private Int32 TicketId = 0;
 
-        public CreateTicket(String customerID)
+        public ViewTicket(String customerID)
         {
             InitializeComponent();       
             
@@ -35,7 +35,7 @@ namespace AssetTracking
             Global.rdr.Close();
 
             //Create ticketID value and print to txtboxTicket
-            Global.cmd = new SqlCommand("Select Count(*) from Tickets WHERE Customer_ID='" + customerID + "'", Global.cs);
+            Global.cmd = new SqlCommand("Select * from Tickets WHERE Customer_ID='" + customerID + "'", Global.cs);
             int ticket_ID = Convert.ToInt32(Global.cmd.ExecuteScalar());
             ticket_ID++;
             txtTicketNo.Text = ticket_ID.ToString();
@@ -52,10 +52,8 @@ namespace AssetTracking
             dt = new DataTable();
             dt.Load(Global.cmd.ExecuteReader());
             ReturnDG.ItemsSource = dt.DefaultView;
-            //cREATE ticket INSERT to database against selected customerID
-            Global.cmd = new SqlCommand("INSERT INTO Tickets(Ticket_ID, Customer_ID)VALUES('" + ticketID_Passed + "','" + CustomerID_Passed + "')", Global.cs);
-            Global.cmd.ExecuteNonQuery();
-            MessageBox.Show("Ticket Added to Database");
+
+
         }
         //Returns the selected return number from the datagrid and puts in textBox
         private void ReturnDG_SelectionChanged(object sender, SelectionChangedEventArgs e)

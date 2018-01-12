@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,10 +24,27 @@ namespace AssetTracking
         public MainWindow()
         {
             InitializeComponent();
+
+//#warning Initialize SQL Connection Here
+
+            //Create SQL connection and open it 
+            Global.cs = new SqlConnection(Global.con);
+            Global.cs.Open();
+
+
             frame1.Content = new MainFrame();           
         }
         private void CreatTicketbtn_Click(object sender, RoutedEventArgs e)
         {
+        }
+        private void CleanYourMess(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+           // con.Close();
+        }
+
+        private void OnClosingEvent(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Global.cs.Close();
         }
     }
 }

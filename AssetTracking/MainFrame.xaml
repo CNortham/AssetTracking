@@ -18,5 +18,7 @@
         <DataGrid x:Name="CustomerDG" HorizontalAlignment="Left" Margin="15,-339,0,0" VerticalAlignment="Top" Height="233" RenderTransformOrigin="0.5,0.5" Width="544" SelectionChanged="CustomerDG_SelectionChanged"/>
         <DataGrid x:Name="TicketDG" HorizontalAlignment="Left" Height="230" Margin="595,-338,0,0" VerticalAlignment="Top" Width="525"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="1,-422,0,0" VerticalAlignment="Top" Width="1275"/>
+        <Button x:Name="btnAttachAsset" Content="Attach Asset To Customer" HorizontalAlignment="Left" Margin="345,-37,0,0" VerticalAlignment="Top" Width="183" Height="41" Click="btnAttachAsset_Click"/>
+        <Button x:Name="btnViewTicket" Content="View Ticket" HorizontalAlignment="Left" Height="41" Margin="930,-37,0,0" VerticalAlignment="Top" Width="202" Click="btnCreateTicket_Click"/>
     </Grid>
 </Page>

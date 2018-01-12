@@ -1,11 +1,11 @@
-﻿<Page x:Class="AssetTracking.CreateTicket"
+﻿<Page x:Class="AssetTracking.ViewTicket"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AssetTracking"
       mc:Ignorable="d"
-      Title="CreateTicket" Height="673.658" Width="1565.37" >
+      Title="ViewTicket" Height="673.658" Width="1565.37" >
 
     <Grid Background="#FFC3C3C3">
         <Grid.RowDefinitions>
